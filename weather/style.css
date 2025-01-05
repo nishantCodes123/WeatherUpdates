@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 90%;
+    max-width: 480px;
+    background: linear-gradient(145deg, #00b4d8, #0077b6);
+    color: #fff;
+    margin: auto;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background: #e0f7fa;
+    color: #333;
+    padding: 12px 20px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 18px;
+    flex: 1;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search input:focus {
+    background-color: #b2ebf2;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.6);
+}
+
+.search button {
+    border: none;
+    outline: none;
+    background: #e0f7fa;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.search button:hover {
+    background-color: #b2ebf2;
+}
+
+.search button img {
+    width: 22px;
+}
+
+.weather-icon {
+    width: 150px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.weather h1 {
+    font-size: 70px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.weather h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex: 1;
+}
+
+.col img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.error {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+    display: none;
+}
